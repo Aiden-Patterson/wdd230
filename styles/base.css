@@ -1,63 +1,76 @@
 main {
   display: grid;
-  grid-template-columns: 50px auto 50px;
+  grid-template-columns: 10px auto 10px;
   justify-items: center;
 }
 
 body {
-  max-width: 700px;
-  margin: 0 auto;
-  background-color: #838e83;
+  background-color: #acad94;
   text-align: center;
 }
 
 header {
-  /* display: flex; */
-  background-color: #6c6061;
-  border-radius: 10px;
-  margin-top: 20px;
-  margin: 0 auto;
+  display: grid;
+  background-color: #384d48;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  align-items: center;
+  text-align: left;
 }
 
 #profile {
-  width: 150px;
+  width: 250px;
   margin: 20px;
   border-radius: 10px;
-  grid-column: 1/2;
 }
 
-h1 {
+header h1 {
   grid-column: 2/3;
-  font-size: 50px;
+  font-size: 100px;
 }
 
 nav {
   display: grid;
-  background-color: white;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 40px;
+  align-content: center;
+}
+
+nav a {
+  height: 50px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+  font-style:italic;
+}
+
+nav a:hover {
+  background-color: #6e7271;
 }
 
 main h2 {
   grid-column: 1/4;
   font-size: 30px;
+  background-color: #6e7271;
+  border-radius: 5px;
 }
+
 .card {
-  background-color: white;
+  background-color: #d4d9d5;
   margin: 10px;
   width: 200px;
   grid-column: 2/3;
   border-radius: 10px;
 }
 
-li{
-    text-align: left;
-    margin-left: 40px;
-    margin-right: auto;
+li {
+  text-align: left;
+  margin-left: 40px;
+  margin-right: auto;
 }
 
 .card h3 {
-  background-color: #b2bcaa;
+  background-color: #6e7271;
   margin: 5px;
   border-radius: 5px;
   font-size: 20px;
