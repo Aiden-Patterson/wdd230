@@ -1,3 +1,11 @@
+:root {
+  --body: #acad94;
+  --header: #6e7271;
+  --mainHeader: #384d48;
+  --lesserBody: #d4d9d5;
+  --text: black;
+}
+
 main {
   display: grid;
   grid-template-columns: 10px auto 10px;
@@ -5,13 +13,13 @@ main {
 }
 
 body {
-  background-color: #acad94;
+  background-color: var(--body);
   text-align: center;
 }
 
 header {
   display: grid;
-  background-color: #384d48;
+  background-color: var(--mainHeader);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   align-items: center;
@@ -40,23 +48,23 @@ nav a {
   height: 50px;
   border-radius: 20px;
   text-decoration: none;
-  color: black;
-  font-style:italic;
+  color: var(--text);
+  font-style: italic;
 }
 
 nav a:hover {
-  background-color: #6e7271;
+  background-color: var(--header);
 }
 
 main h2 {
   grid-column: 1/4;
   font-size: 30px;
-  background-color: #6e7271;
+  background-color: var(--header);
   border-radius: 5px;
 }
 
 .card {
-  background-color: #d4d9d5;
+  background-color: var(--lesserBody);
   margin: 10px;
   width: 200px;
   grid-column: 2/3;
@@ -70,7 +78,7 @@ li {
 }
 
 .card h3 {
-  background-color: #6e7271;
+  background-color: var(--header);
   margin: 5px;
   border-radius: 5px;
   font-size: 20px;
