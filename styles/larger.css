@@ -1,0 +1,19 @@
+@media screen and (min-width: 800px) {
+  header h1 {
+    font-size: 100px;
+  }
+  #profile {
+    width: 250px;
+  }
+  nav {
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  main {
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+  .card{
+    grid-column:unset;
+  }
+}

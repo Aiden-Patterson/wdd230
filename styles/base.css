@@ -6,11 +6,7 @@
   --text: black;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 10px auto 10px;
-  justify-items: center;
-}
+
 
 body {
   background-color: var(--body);
@@ -27,21 +23,21 @@ header {
 }
 
 #profile {
-  width: 250px;
+  width: 150px;
   margin: 20px;
   border-radius: 10px;
 }
 
 header h1 {
   grid-column: 2/3;
-  font-size: 100px;
+  font-size: 50px;
 }
 
 nav {
-  display: grid;
+  display: flex;
   border-radius: 10px;
   font-size: 40px;
-  align-content: center;
+  flex-direction: column;
 }
 
 nav a {
@@ -54,6 +50,12 @@ nav a {
 
 nav a:hover {
   background-color: var(--header);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 50px auto 50px;
+  justify-items: center;
 }
 
 main h2 {
