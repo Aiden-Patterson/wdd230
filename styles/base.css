@@ -1,9 +1,9 @@
 :root {
   --body: #acad94;
-  --header: #6e7271;
+  --header: #949897;
   --mainHeader: #384d48;
   --lesserBody: #d4d9d5;
-  --text: black;
+  --textHeader: #E2E4E2;
 }
 
 body {
@@ -17,9 +17,10 @@ header {
   background-color: var(--mainHeader);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  text-align:left;
+  text-align: left;
+  color: var(--textHeader);
 }
-header.open{
+header.open {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
@@ -33,10 +34,11 @@ header.open{
 
 header h1 {
   grid-column: 1/2;
-  font-size: 50px;
+  font-size: 60px;
+  margin-left: 20px;
 }
 
-#menu{
+#menu {
   font-size: 6rem;
   background-color: var(--mainHeader);
   grid-column: 2/3;
@@ -44,13 +46,13 @@ header h1 {
   margin: 10px;
 }
 
-#menu::before{
+#menu::before {
   content: "≡";
 }
-#menu.open::before{
+#menu.open::before {
   content: "X";
 }
-nav{
+nav {
   grid-column: 2/3;
   background-color: var(--mainHeader);
   text-align: center;
@@ -67,7 +69,7 @@ nav{
   height: 50px;
   border-radius: 20px;
   text-decoration: none;
-  color: var(--text);
+  color: var(--textHeader);
   font-style: italic;
 }
 
@@ -75,8 +77,8 @@ nav a:hover {
   background-color: var(--header);
 }
 
-.open a{
-  display:block;
+.open a {
+  display: block;
 }
 
 main {
@@ -100,10 +102,9 @@ main h2 {
   border-radius: 10px;
 }
 
-ul{
+ul {
   text-align: left;
 }
-
 
 .card h3 {
   background-color: var(--header);
