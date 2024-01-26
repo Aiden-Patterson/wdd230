@@ -6,8 +6,6 @@
   --text: black;
 }
 
-
-
 body {
   background-color: var(--body);
   text-align: center;
@@ -15,32 +13,51 @@ body {
 
 header {
   display: grid;
+  grid-template-columns: auto auto;
   background-color: var(--mainHeader);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  align-items: center;
-  text-align: left;
+  text-align:left;
 }
 
 #profile {
-  width: 150px;
-  margin: 20px;
+  width: 100px;
+  margin-left: 20px;
+  margin-top: 20px;
   border-radius: 10px;
 }
 
 header h1 {
-  grid-column: 2/3;
+  grid-column: 1/2;
   font-size: 50px;
 }
 
-nav {
-  display: flex;
-  border-radius: 10px;
-  font-size: 40px;
-  flex-direction: column;
+#menu{
+  font-size: 6rem;
+  background-color: var(--mainHeader);
+  grid-column: 2/3;
+  border: none;
+  margin: 10px;
 }
 
-nav a {
+#menu::before{
+  content: "≡";
+}
+#menu.open::before{
+  content: "X";
+}
+nav{
+  grid-column: 2/3;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.navigation {
+  border-radius: 10px;
+  font-size: 40px;
+}
+
+.navigation a {
+  display: none;
   height: 50px;
   border-radius: 20px;
   text-decoration: none;
@@ -50,6 +67,10 @@ nav a {
 
 nav a:hover {
   background-color: var(--header);
+}
+
+.open a{
+  display:block;
 }
 
 main {
@@ -73,11 +94,10 @@ main h2 {
   border-radius: 10px;
 }
 
-li {
+ul{
   text-align: left;
-  margin-left: 40px;
-  margin-right: auto;
 }
+
 
 .card h3 {
   background-color: var(--header);

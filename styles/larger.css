@@ -1,13 +1,22 @@
 @media screen and (min-width: 800px) {
   header h1 {
     font-size: 100px;
+    grid-column: 2/3;
   }
   #profile {
     width: 250px;
+    margin: 20px;
   }
-  nav {
+  #menu{
+    display: none;
+  }
+  .navigation {
+    display: flex;
     justify-content: space-around;
     flex-direction: row;
+  }
+  .navigation a{
+    display:block;
   }
   main {
     grid-template-columns: auto auto;
