@@ -3,7 +3,7 @@
   --header: #949897;
   --mainHeader: #384d48;
   --lesserBody: #d4d9d5;
-  --textHeader: #E2E4E2;
+  --textHeader: #e2e4e2;
 }
 
 body {
@@ -20,9 +20,24 @@ header {
   text-align: left;
   color: var(--textHeader);
 }
+
 header.open {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+}
+
+header h1::selection{
+  color: var(--mainHeader);
+  background: var(--textHeader);
+}
+header img::selection{
+  color: var(--mainHeader);
+  background: var(--textHeader);
+}
+
+nav a::selection{
+  color: var(--mainHeader);
+  background: var(--textHeader);
 }
 
 #profile {
@@ -72,6 +87,9 @@ nav {
   color: var(--textHeader);
   font-style: italic;
 }
+h2{
+  width: 100%;
+}
 
 nav a:hover {
   background-color: var(--header);
@@ -104,6 +122,10 @@ main h2 {
 
 ul {
   text-align: left;
+}
+li::marker {
+  color: var(--mainHeader);
+  font-size: 20px;
 }
 
 .card h3 {
