@@ -101,7 +101,7 @@ nav a:hover {
 
 main {
   display: grid;
-  grid-template-columns: 50px auto 50px;
+  grid-template-columns: 10px auto 10px;
   justify-items: center;
 }
 
@@ -115,7 +115,7 @@ main h2 {
 .card {
   background-color: var(--lesserBody);
   margin: 10px;
-  width: 200px;
+  width: 90%;
   grid-column: 2/3;
   border-radius: 10px;
 }
@@ -137,4 +137,10 @@ li::marker {
 
 .card h4 {
   margin-top: 5px;
+}
+
+iframe{
+  height:400px;
+  width:400px;
+  border: none;
 }
