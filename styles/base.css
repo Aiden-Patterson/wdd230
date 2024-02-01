@@ -71,7 +71,6 @@ nav {
   grid-column: 2/3;
   background-color: var(--mainHeader);
   text-align: center;
-  margin-bottom: 10px;
 }
 .navigation {
   border-bottom-left-radius: 20px;
@@ -81,11 +80,11 @@ nav {
 
 .navigation a {
   display: none;
-  height: 50px;
   border-radius: 20px;
   text-decoration: none;
   color: var(--textHeader);
   font-style: italic;
+  padding: 2px;
 }
 h2{
   width: 100%;
