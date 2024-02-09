@@ -1,81 +1,83 @@
 body {
-    display: grid;
-    grid-template-columns: auto auto;
-    background-color: #C9DFE3;
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #c9dfe3;
 }
 
-header{
-grid-column: 1/3;
-background-color: #003A86;
-color: white;
+header {
+  grid-column: 1/3;
+  background-color: #003a86;
+  color: white;
 }
 
-header nav{
-    width: 100%;
+.hero {
+    grid-column: 1/3;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+
+header nav {
+  width: 100%;
 }
 
 header nav ul {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
 }
-nav .link{
-    font-size: 30px;
-    
+nav .link {
+  font-size: 30px;
 }
-.link{
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
+.link {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
 }
-.link:hover{
-    text-decoration: underline;
-    background-color: #636363;
+.link:hover {
+  text-decoration: underline;
+  background-color: #636363;
 }
 
-h2{
-    position:relative;
-    top: -20px;
-    background-color: #25B03C;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-header .hero{
-    
+h2 {
+  position: relative;
+  top: -20px;
+  background-color: #25b03c;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-#events{
-    background-color: #C0C0C0;
-    margin: 10px;
-    border-radius: 10px;
-    text-indent: 10px;
+#events {
+  background-color: #c0c0c0;
+  margin: 10px;
+  border-radius: 10px;
+  text-indent: 10px;
 }
-#events a{
-text-align: center;
+#events a {
+  text-align: center;
 }
-#about{
-    background-color: #C0C0C0;
-    margin: 10px;
-    border-radius: 10px;
-    text-indent: 10px;
+#about {
+  background-color: #c0c0c0;
+  margin: 10px;
+  border-radius: 10px;
+  text-indent: 10px;
 }
-#weather{
-    background-color: #C0C0C0;
-    margin: 10px;
-    border-radius: 10px;
-    text-indent: 10px;
+#weather {
+  background-color: #c0c0c0;
+  margin: 10px;
+  border-radius: 10px;
+  text-indent: 10px;
 }
-#ads{
-    background-color: #C0C0C0;
-    margin: 10px;
-    border-radius: 10px;
-    text-indent: 10px;
-}
-
-footer{
-    grid-column: 1/3;
-    background-color: #003A86;
-    color: white;
+#ads {
+  background-color: #c0c0c0;
+  margin: 10px;
+  border-radius: 10px;
+  text-indent: 10px;
 }
 
+footer {
+  grid-column: 1/3;
+  background-color: #003a86;
+  color: white;
+}
