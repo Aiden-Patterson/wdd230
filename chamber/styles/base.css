@@ -1,20 +1,36 @@
+:root{
+    --card-back: #c0c0c0;
+    --body-back: #C9DFE3;
+    --card-head: #25B03C;
+    --main-head: #003A86;
+    --head-text: white;
+    --body-text: black;
+}
 .dark-mode {
   --card-back: #656565;
-  --body-back: #2a6873;
+  --body-back: #202729;
   --card-head: #0c3413;
   --main-head: #001f49;
+  --body-text: white;
+}
+#mode{
+    position: absolute;
+    top: 6rem;
+    right: 3rem;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 body {
   display: grid;
   grid-template-columns: auto auto;
-  background-color: #c9dfe3;
+  background-color: var(--body-back);
 }
 
 header {
   grid-column: 1/3;
-  background-color: #003a86;
-  color: white;
+  background-color: var(--main-head);
+  color: var(--head-text);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -41,7 +57,7 @@ nav .link {
 .link {
   font-size: 20px;
   text-decoration: none;
-  color: white;
+  color: var(--head-text);
 }
 .link:hover {
   text-decoration: underline;
@@ -51,20 +67,21 @@ nav .link {
 h2 {
   position: relative;
   top: -20px;
-  background-color: #25b03c;
+  background-color: var(--card-head);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
 .card {
-  background-color: #c0c0c0;
+  background-color: var(--card-back);
   margin: 10px;
   border-radius: 10px;
   text-indent: 10px;
+  color: var(--body-text);
 }
 
 footer {
   grid-column: 1/3;
-  background-color: #003a86;
-  color: white;
+  background-color: var(--main-head);
+  color: var(--head-text);
 }
