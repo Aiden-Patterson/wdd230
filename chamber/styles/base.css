@@ -7,8 +7,8 @@
     --body-text: black;
 }
 .dark-mode {
-  --card-back: #656565;
-  --body-back: #202729;
+  --card-back: #4e4e4e;
+  --body-back: #5a626d;
   --card-head: #0c3413;
   --main-head: #001f49;
   --body-text: white;
@@ -54,10 +54,13 @@ header nav ul {
 nav .link {
   font-size: 30px;
 }
+header .link{
+  color: var(--head-text);
+}
 .link {
   font-size: 20px;
   text-decoration: none;
-  color: var(--head-text);
+  color: var(--body-text);
 }
 .link:hover {
   text-decoration: underline;
@@ -68,6 +71,7 @@ h2 {
   position: relative;
   top: -20px;
   background-color: var(--card-head);
+  color: var(--body-text);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
