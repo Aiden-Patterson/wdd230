@@ -40,11 +40,21 @@
       </nav>
       <h1>Bentonville, AR Chamber of Commerce</h1>
       <a href="#" class="link">Join Now</a>
-      <img
-        class="hero"
-        src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/downtown-bentonville-arkansas-town-square-skyline-panoramic-gregory-ballos.jpg"
-        alt="Hero image of Bentonville, Arkansas"
-        >
+      <picture>
+        <source
+          srcset="images/wdd230-org-small.jpg"
+          media="(max-width: 700px)"
+        />
+        <source
+          srcset="images/wdd230-org-medium.jpg"
+          media="(max-width: 1300px)"
+        />
+        <img
+          src="images/wdd230-org-large.jpg"
+          alt="Hero Image"
+        />
+      </picture>
+      <div class="label">Small</div>
     </header>
     <main>
       <div class="card">
