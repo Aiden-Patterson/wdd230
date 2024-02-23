@@ -1,0 +1,21 @@
+main{
+  display: grid;
+  justify-content: center;
+}
+
+.image {
+  background: black;
+  width: 400px;
+  height: 600px;
+  margin-bottom: 20px;
+  transition: fade 5s;
+}
+
+@keyframes fade{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
