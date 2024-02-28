@@ -1,9 +1,0 @@
-@media screen and (min-width: 1201px) {
-    #rightbar img{
-        margin-left: 40px;
-        margin-top: 13px;
-    }
-    #rightbar img:hover{
-        transform: scale(1.1);
-    }
-}
