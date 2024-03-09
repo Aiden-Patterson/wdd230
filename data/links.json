@@ -1,0 +1,83 @@
+{
+  "lessons": [
+    {
+      "lesson": "02",
+      "links": [
+        {
+          "url": "lesson02/design-principles.html",
+          "title": "Design Principles document"
+        }
+      ]
+    },
+    {
+        "lesson": "03",
+        "links": [
+          {
+            "url": "lesson03/chamber-site-plan.html",
+            "title": "Chamber Site Plan"
+          },
+          {
+            "url": "https://codepen.io/Aiden-Patterson-the-sans/pen/oNVGoVV",
+            "title": "Hamburger menu"
+          },
+          {
+            "url": "https://codepen.io/Aiden-Patterson-the-sans/pen/xxBPbyo",
+            "title": "Pseudo-elements"
+          }
+        ]
+      },
+      {
+        "lesson": "04",
+        "links": [
+          {
+            "url": "https://codepen.io/Aiden-Patterson-the-sans/pen/WNmzbYw",
+            "title": "Pseudo classes"
+          }
+        ]
+      },
+      {
+        "lesson": "05",
+        "links": [
+          {
+            "url": "lesson05/bom.html",
+            "title": "Book of Mormon"
+          }
+        ]
+      },
+      {
+        "lesson": "07",
+        "links": [
+          {
+            "url": "lesson07/bom.html",
+            "title": "Book of Mormon localStorage"
+          },
+          {
+            "url": "lesson07/lazyload.html",
+            "title": "Lazy Load template"
+          }
+        ]
+      },
+      {
+        "lesson": "08",
+        "links": [
+          {
+            "url": "lesson08/tablebuild.html",
+            "title": "Table Build"
+          },
+          {
+            "url": "lesson08/form.html",
+            "title": "Form design"
+          }
+        ]
+      },
+      {
+        "lesson": "09",
+        "links": [
+          {
+            "url": "lesson09/prophets.html",
+            "title": "Prophets"
+          }
+        ]
+      }
+  ]
+}
