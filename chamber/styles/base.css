@@ -116,3 +116,61 @@ footer {
       transform: scale(1.1);
   }
 }
+
+#join{
+  display: block;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#join fieldset{
+  margin: 30px;
+}
+
+legend{
+  font-size: 30px;
+}
+
+label{
+  font-size: 20px;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+input[type="number"] {
+  background-color: #eee;
+  display: block;
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: 10px;
+  color: gray;
+  max-width: 400px;
+  width: 100%;
+  appearance: none;
+  margin-bottom: 20px;
+}
+
+input[type="radio"]
+{
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+input[type="submit"]
+{
+  width: 90%;
+  height: 50px;
+
+}
+
+input:required{
+  border-left: solid 8px red;
+}
+
+input:required:valid{
+  border-left: solid 8px green;
+}

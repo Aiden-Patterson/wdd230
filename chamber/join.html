@@ -39,19 +39,34 @@
       </nav>
       <img class="logo" src="images/logo.webp" alt="logo" />
       <h1>Bentonville, AR Chamber of Commerce</h1>
-      <a href="#" class="link">Join Now</a>
+      <a href="join.html" class="link">Join Now</a>
     </header>
 
-    <main>
+    <main id ="join">
       <form method="get" action="thankyou.html">
+        <fieldset>
+        <legend>Name</legend>
         <label>First Name*<input type="text" name="fname" id="fname" required></label>
         <label>Last Name*<input type="text" name="lname" id="lname" required></label>
         <label>Title*<input type="text" name="title" id="title" pattern="[a-zA-Z -]{7,}" required></label>
-        <label>email<input type="email" name="email" id="email" placeholder="example@domain.com"></label>
-        <label>Phone*<input type="tel" name="phone" id ="phone" placeholder="1231231234"></label>
-        <label>Membership Level</label>
-        <label>Description<input type="text" name="desc" id="desc"></label>
+        </fieldset>
+        <fieldset>
+        <legend>Contact Information</legend>
+        <label>email<input type="email" name="email" id="email" placeholder="example@domain.com" required></label>
+        <label>Phone*<input type="tel" name="phone" id ="phone" placeholder="1231231234" required></label>
+        </fieldset>
+        <fieldset>
+        <legend>Membership Level</legend>
+        <label><input type="radio" id="np" value="np" name="membership">NP</label>
+        <label><input type="radio" id="bronze" value="bronze" name="membership">Bronze</label>
+        <label><input type="radio" id="silver" value="silver" name="membership">Silver</label>
+        <label><input type="radio" id="gold" value="gold" name="membership">Gold</label>
+      </fieldset>
+      <fieldset>
+        <legend>Description</legend>
+          <input type="text" name="desc" id="desc">
         <input type="hidden" name="hidden" id="hidden">
+        </fieldset>
         <input type="submit" value="Join Now">
       </form>
     </main>
