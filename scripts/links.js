@@ -1,5 +1,5 @@
 const baseURL = "https://Aiden-Patterson.github.io/wdd230/"
-const linksURL = "https://aiden-patterson.github.io/wdd230/links.json";
+const linksURL = "https://aiden-patterson.github.io/wdd230/data/links.json";
 const unorderedList = document.querySelector('assignments');
 
 async function getLinks() {
@@ -8,14 +8,14 @@ async function getLinks() {
     displayLinks(data);
 }
 
-function displayLinks(weeks){
+const displayLinks = (weeks) => {
     weeks.forEach((lesson) => {
         const weekNumber = lesson.lesson;
         lesson.forEach((assignment) => {
             const url = assignment.url;
             const title = assignment.title;
-            const link = createElement('a');
-            link.textContent = title;
+            const link = document.createElement('a');
+            link.textContent = weekNumber + " : " + title;
             link.setAttribute('href', url);
             const list = createElement('li');
             list.appendChild(link);
@@ -23,5 +23,5 @@ function displayLinks(weeks){
         });
     });
 }
-
+getLinks();
 
