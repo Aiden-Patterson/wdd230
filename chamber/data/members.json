@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "Federal Soft Systems Inc.",
+      "address": "3101 SW I St Ste 31, Bentonville, AR, 72712",
+      "phone": "(201) 716-9222",
+      "website": "https://federalsoftsystems.com/",
+      "icon_file_name": "N/A",
+      "membership": "Bronze"
+    },
+    {
+      "name": "NWA Business Women's Conference",
+      "address": "702 SE 5th St, Bentonville, AR, 72712",
+      "phone": "(479) 273-2841",
+      "website": "https://www.bwcassemble.com/",
+      "icon_file_name": "N/A",
+      "membership": "Bronze"
+    },
+    {
+      "name": "Movista",
+      "address": "406 SE 5th St Ste 12, Bentonville, AR, 72712",
+      "phone": "(888) 686-6245",
+      "website": "https://www.movista.com/",
+      "icon_file_name": "N/A",
+      "membership": "Silver"
+    },
+    {
+      "name": "RevUnit",
+      "address": "409 SW A St, Bentonville, AR, 72712",
+      "phone": "(479) 715-6400",
+      "website": "https://revunit.com/",
+      "icon_file_name": "N/A",
+      "membership": "Silver"
+    },
+    {
+      "name": "Stx Business Solutions",
+      "address": "906 SE J St, Bentonville, AR, 72712",
+      "phone": "(425) 882-8080",
+      "website": "https://stxbusiness.com/",
+      "icon_file_name": "N/A",
+      "membership": "Gold"
+    },
+    {
+      "name": "Malone Consultants Group",
+      "address": "125 W Central Ave Ste 200, Bentonville, AR, 72712",
+      "phone": "(501) 291-0481",
+      "website": "https://www.maloneconsultantsgroup.com/",
+      "icon_file_name": "N/A",
+      "membership": "Bronze"
+    },
+    {
+      "name": "Walmart Home Office",
+      "address": "702 SW 8th St, Bentonville, AR, 72712",
+      "phone": "(479) 273-4000",
+      "website": "https://corporate.walmart.com/",
+      "icon_file_name": "N/A",
+      "membership": "NP"
+    }
+  ]
+}
