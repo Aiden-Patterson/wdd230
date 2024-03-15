@@ -48,11 +48,11 @@
         "lesson": "07",
         "links": [
           {
-            "url": "lesson07/bom.html",
+            "url": "Lesson07/bom.html",
             "title": "Book of Mormon localStorage"
           },
           {
-            "url": "lesson07/lazyload.html",
+            "url": "Lesson07/lazyload.html",
             "title": "Lazy Load template"
           }
         ]
@@ -61,11 +61,11 @@
         "lesson": "08",
         "links": [
           {
-            "url": "lesson08/tablebuild.html",
+            "url": "Lesson08/tablebuild.html",
             "title": "Table Build"
           },
           {
-            "url": "lesson08/form.html",
+            "url": "Lesson08/form.html",
             "title": "Form design"
           }
         ]
@@ -76,6 +76,15 @@
           {
             "url": "lesson09/prophets.html",
             "title": "Prophets"
+          }
+        ]
+      },
+      {
+        "lesson": "10",
+        "links": [
+          {
+            "url": "Lesson10/weather.html",
+            "title": "Weather"
           }
         ]
       }
