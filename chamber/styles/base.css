@@ -59,11 +59,9 @@ header .link {
 }
 .link {
   font-size: 20px;
-  text-decoration: none;
   color: var(--body-text);
 }
 .link:hover {
-  text-decoration: underline;
   background-color: #636363;
 }
 .logo {
@@ -90,12 +88,13 @@ h2 {
 }
 
 .card {
+  position: relative;
+  top: 50px;
   display: flex;
   flex-direction: column;
   background-color: var(--card-back);
   margin: 5px;
   border-radius: 10px;
-  text-indent: 10px;
   align-items: center;
   color: var(--body-text);
   margin-bottom: 20px;
@@ -115,6 +114,21 @@ footer {
   #rightbar img:hover{
       transform: scale(1.1);
   }
+}
+#joinButton{
+  position: relative;
+  top: 22px;
+  left: 20px;
+  text-align: center;
+  font-size: 40px;
+  background-color: var(--card-head);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#joinButton:hover{
+  background-color: #636363;
 }
 
 #join{
