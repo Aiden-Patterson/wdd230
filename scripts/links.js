@@ -5,13 +5,13 @@ const unorderedList = document.getElementById('assignments');
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    console.log(data.lessons);
+    //console.log(data.lessons);
     displayLinks(data.lessons);
 }
 
 const displayLinks = (weeks) => {
     weeks.forEach((lesson) => {
-        console.log(lesson);
+        //console.log(lesson);
         const weekNumber = lesson.lesson;
         lesson.links.forEach((assignment) => {
         
@@ -22,7 +22,7 @@ const displayLinks = (weeks) => {
             link.setAttribute('href', url);
             const list = document.createElement('li');
             list.appendChild(link);
-            console.log(assignment);
+            //console.log(assignment);
             unorderedList.appendChild(list);
             
         });
