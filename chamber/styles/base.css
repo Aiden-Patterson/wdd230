@@ -76,6 +76,9 @@ main {
 picture {
   grid-column: 1/3;
 }
+#hero{
+  max-width: 100px;
+}
 h2 {
   position: relative;
   top: -25px;
@@ -115,6 +118,7 @@ footer {
       transform: scale(1.1);
   }
 }
+
 #joinButton{
   position: relative;
   top: 22px;
@@ -187,4 +191,17 @@ input:required{
 
 input:required:valid{
   border-left: solid 8px green;
+}
+
+#directory-main{
+  grid-template-columns: auto;
+}
+#directory-main .card{
+  margin-top: 20px;
+  
+  top: 0px;
+}
+#members{
+  grid-column: 1/3;
+  width: 100%;
 }

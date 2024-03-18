@@ -6,8 +6,8 @@ const unorderedList = document.getElementById("members");
 async function getMembers() {
   const response = await fetch(linksURL);
   const data = await response.json();
-  console.log(data.lessons);
-  displayMembers(data.lessons);
+  //console.log(data.members);
+  displayMembers(data.members);
 }
 
 const displayMembers = (members) => {
