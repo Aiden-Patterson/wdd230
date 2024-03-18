@@ -91,8 +91,6 @@ h2 {
 }
 
 .card {
-  position: relative;
-  top: 50px;
   display: flex;
   flex-direction: column;
   background-color: var(--card-back);
@@ -119,31 +117,12 @@ footer {
   }
 }
 
-#joinButton{
-  position: relative;
-  top: 22px;
-  left: 20px;
-  text-align: center;
-  font-size: 40px;
-  background-color: var(--card-head);
-  padding: 10px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-#joinButton:hover{
-  background-color: #636363;
-}
-
 #join{
   display: block;
   align-items: center;
   margin-bottom: 20px;
 }
 
-#join fieldset{
-  margin: 30px;
-}
 
 legend{
   font-size: 30px;
