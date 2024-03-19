@@ -26,8 +26,15 @@
   </head>
 
   <body>
+    <div id="banner">
+      <h1>Chamber meet and greet this Wednesday at 7:00</h1>
+      <div id="bannerclose">❌</div>
+    </div>
     <div id="mode">🌘</div>
     <header>
+
+      <img class="logo" src="images/logo.webp" alt="logo" />
+      <h1>Bentonville, AR Chamber of Commerce</h1>
       <nav>
         <ul>
           <li><a href="index.html" class="link">Home</a></li>
@@ -36,57 +43,61 @@
           <li><a href="join.html" class="link">Join Now</a></li>
         </ul>
       </nav>
-      <img class="logo" src="images/logo.webp" alt="logo" />
-      <h1>Bentonville, AR Chamber of Commerce</h1>
-      <picture id="hero">
-        <source
-          srcset="images/Bentonville sign small.webp"
-          media="(max-width: 800px)"
-        />
-        <img
-          src="images/Bentonville sign.webp"
-          alt="Sign for Bentonville AR"
-          loading="lazy"
-        />
-      </picture>
-
     </header>
 
     <main>
-
       <div id="leftbar">
-
-      <div class="card">
-        <h2>Upcoming Events</h2>
-        <div class="event">
-          <h3>Event header</h3>
-          <p>Event Date</p>
-          <p>Event Time</p>
-          <p>Event Location</p>
+        <div class="card">
+          <h2>Upcoming Events</h2>
+          <div class="event">
+            <h3>Event header</h3>
+            <p>Event Date</p>
+            <p>Event Time</p>
+            <p>Event Location</p>
+          </div>
+          <a href="#" class="link view-all">View All Events</a>
         </div>
-        <a href="#" class="link view-all">View All Events</a>
-      </div>
 
-      <div class="card">
-        <h2>Current Weather</h2>
-        <h3>Bentonville, AR</h3>
-        <p id="windchill"></p>
-        <p></p>
-      </div>
-
-      <div class="card">
-        <h2>Advertisements</h2>
-        <div class="ad"></div>
-        <div class="ad"></div>
-        <div class="ad"></div>
-      </div>
+        <div class="card">
+          <h2>Advertisements</h2>
+          <div class="ad"></div>
+          <div class="ad"></div>
+          <div class="ad"></div>
+        </div>
       </div>
       <div id="rightbar">
         <div class="card">
           <h2>About us</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus assumenda unde autem nam, quaerat distinctio veritatis natus placeat nemo sed laborum adipisci sit, expedita earum quae quo asperiores culpa qui?</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            assumenda unde autem nam, quaerat distinctio veritatis natus placeat
+            nemo sed laborum adipisci sit, expedita earum quae quo asperiores
+            culpa qui?
+          </p>
         </div>
-        
+        <picture id="hero">
+          <source
+            srcset="images/Bentonville sign small.webp"
+            media="(max-width: 800px)"
+          />
+          <img
+            src="images/Bentonville sign.webp"
+            alt="Sign for Bentonville AR"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+      <div class="weatherCard">
+        <h2 id="currentheader">Current Weather</h2>
+        <div class="card" id="currentweather">
+        <h3>Bentonville, AR</h3>
+        <p id="temp"></p>
+        <p id="weatherDesc"></p>
+        </div>
+
+        <h2 id="forecastheader">Forecast</h2>
+        <div id="forecast">
+        </div>
       </div>
     </main>
     <footer>
@@ -99,6 +110,7 @@
       <p>&copy; 2024 Chamber Website</p>
     </footer>
     <script src="scripts/darkmode.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
   </body>
 </html>

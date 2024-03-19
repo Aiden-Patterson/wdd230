@@ -13,6 +13,24 @@
   --main-head: #001f49;
   --body-text: white;
 }
+#banner {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--card-head);
+  color: var(--body-text);
+  text-align: center;
+}
+#bannerclose {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
 #mode {
   position: absolute;
   top: 6rem;
@@ -184,4 +202,40 @@ input:required:valid{
 #members{
   grid-column: 1/3;
   width: 100%;
+}
+
+.weatherCard{
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 30% auto;
+  gap: 10px;
+  background-color: var(--main-head);
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.weatherCard h2{
+  max-height: 40px;
+  top: -20px;
+}
+
+#currentheader{
+  grid-column: 1/2;
+}
+
+#currentweather{
+  grid-column: 1/2;
+}
+#forecastheader{
+grid-column: 2/3;
+grid-row: 1/2;
+}
+
+#forecast{
+  grid-column: 2/3;
+  display: flex;
+  justify-content: space-around;
+}
+
+#forecast .card{
+  padding: 10px;
 }
