@@ -11,7 +11,7 @@ async function getWeather(){
 async function getForecast(){
     const response = await fetch("https://api.openweathermap.org/data/2.5/forecast?units=imperial&lat=36.3723285430077&lon=-94.21022792072695&appid=a47278e2e9de5255593e29aa1a2c28b7");
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     displayForecast(data);
 }
 
