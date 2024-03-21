@@ -28,6 +28,9 @@
   <body>
     <div id="mode">🌘</div>
     <header>
+
+      <img class="logo" src="images/logo.webp" alt="logo" />
+      <h1>Bentonville, AR Chamber of Commerce</h1>
       <nav>
         <ul>
           <li><a href="index.html" class="link">Home</a></li>
@@ -36,57 +39,9 @@
           <li><a href="join.html" class="link">Join Now</a></li>
         </ul>
       </nav>
-      <img class="logo" src="images/logo.webp" alt="logo" />
-      <h1>Bentonville, AR Chamber of Commerce</h1>
-      <a href="#" class="link">Join Now</a>
     </header>
 
     <main>
-      <picture>
-        <source
-          srcset="images/wdd230-org-small.jpg"
-          media="(max-width: 700px)"
-        />
-        <source
-          srcset="images/wdd230-org-medium.jpg"
-          media="(max-width: 1300px)"
-        />
-        <img src="images/wdd230-org-large.jpg" alt="Hero Image" />
-      </picture>
-      <div id="sidebar">
-        <div class="card">
-          <h2>About Us</h2>
-        </div>
-
-        <div class="card">
-          <h2>Upcoming Events</h2>
-          <div class="event">
-            <h3>Event header</h3>
-            <p>Event Date</p>
-            <p>Event Time</p>
-            <p>Event Location</p>
-          </div>
-          <a href="#" class="link view-all">View All Events</a>
-        </div>
-        <div class="card">
-          <h2>Visited</h2>
-          <p id="lastVisit"></p>
-        </div>
-        <div class="card">
-          <h2>Current Weather</h2>
-          <h3>Bentonville, AR</h3>
-          <p id="windchill"></p>
-          <p>Humidity: 200%</p>
-        </div>
-
-        <div class="card">
-          <h2>Advertisements</h2>
-          <div class="ad"></div>
-          <div class="ad"></div>
-          <div class="ad"></div>
-        </div>
-      </div>
-      <div id="rightbar">
         <picture>
           <source
             srcset="images/Bentonville sign small.webp"
@@ -155,7 +110,6 @@
             loading="lazy"
           />
         </picture>
-      </div>
     </main>
     <footer>
       <div class="contact us">
@@ -167,7 +121,5 @@
       <p>&copy; 2024 Chamber Website</p>
     </footer>
     <script src="scripts/darkmode.js"></script>
-    <script src="scripts/windchill.js"></script>
-    <script src="scripts/lastvisit.js"></script>
   </body>
 </html>
