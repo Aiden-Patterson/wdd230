@@ -8,6 +8,15 @@ async function getMembers() {
   const data = await response.json();
   //console.log(data.members);
   displayMembers(data.members);
+
+  let topMembers;
+  data.members.forEach((member) => {
+    if (member.membership == "Gold" || member.membership == "Silver") {
+      topMembers.appendChild(member);
+    }
+  });
+  console.log(topMembers);
+  displaySpotlight(topMembers);
 }
 
 const displayMembers = (members) => {
@@ -40,4 +49,6 @@ const displayMembers = (members) => {
     unorderedList.appendChild(item);
   });
 };
+
+
 getMembers();
