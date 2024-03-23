@@ -85,8 +85,9 @@ nav {
   padding: 2px;
 }
 
-.current::before{
-  content: "🚀 ";
+.current::after{
+  font-style:normal;
+  content: "🚩";
 }
 
 nav .link {
