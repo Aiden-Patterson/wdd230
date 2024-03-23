@@ -8,10 +8,8 @@ closeBtn.addEventListener("click", () => {
 // Check if today is a Monday, Wednesday, or Friday
 const today = new Date();
 const day = today.getDay();
-const isMonday = day === 1;
-const isWednesday = day === 3;
-const isFriday = day === 5;
 
-if (isMonday || isWednesday || isFriday) {
+
+if (day === 1 || day === 2 || day === 3) {
   banner.style.display = "block";
 }
