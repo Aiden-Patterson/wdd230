@@ -85,6 +85,10 @@ nav {
   padding: 2px;
 }
 
+.current::before{
+  content: "🚀 ";
+}
+
 nav .link {
   font-size: 30px;
 }
@@ -126,7 +130,13 @@ main {
   display: flex;
   flex-direction: column;
 }
-
+#discoverpage{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#discoverpage img{
+  max-width: 100%;
+}
 #hero {
   max-width: 100px;
 }
