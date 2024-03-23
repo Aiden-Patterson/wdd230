@@ -8,21 +8,13 @@ async function getMembers() {
   const data = await response.json();
   //console.log(data.members);
   displayMembers(data.members);
-
-  let topMembers;
-  data.members.forEach((member) => {
-    if (member.membership == "Gold" || member.membership == "Silver") {
-      topMembers.appendChild(member);
-    }
-  });
-  console.log(topMembers);
-  displaySpotlight(topMembers);
 }
 
 const displayMembers = (members) => {
   members.forEach((member) => {
     const item = document.createElement("div");
-    const name = document.createElement("h3");
+    item.className = "card";
+    const name = document.createElement("h2");
     name.textContent = member.name;
     item.appendChild(name);
 
