@@ -261,15 +261,36 @@ input:required:valid {
 }
 
 #directory-main {
-  display: block;
+  display:block;
 }
 #directory-main .card {
   margin-top: 20px;
+  min-width: 30%;
 }
 
 #members {
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+ flex-wrap: wrap;
+  grid-template-columns: auto;
+  max-width: 100%;
+  
+}
+
+.listview {
+  grid-template-columns: auto;
+}
+
+.cardlistview{
+  flex-direction: row;
+  background-color: var(--body-back);
+  justify-content: space-between;
+  width: 100%;
+  border-style: solid;
+}
+.cardlistview h2{
+  width: 20%;
+  background-color: var(--body-back);
+  top: 0px;
 }
 
 .weatherCard {
