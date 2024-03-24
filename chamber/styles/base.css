@@ -85,7 +85,7 @@ nav {
   padding: 2px;
 }
 
-.current::after{
+#current::after{
   font-style:normal;
   content: "🚩";
 }
