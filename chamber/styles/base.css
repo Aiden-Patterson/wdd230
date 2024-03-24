@@ -243,7 +243,10 @@ input[type="number"] {
 input[type="radio"] {
   margin-left: 20px;
   margin-right: 5px;
+  width: 30px;
+  height: 20px;
 }
+
 
 input[type="submit"] {
   width: 90%;
