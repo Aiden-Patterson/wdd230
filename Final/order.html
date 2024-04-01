@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="stylesheet" href="styles/base.css" />
+        <meta name="author" content="Aiden Patterson" />
+        <meta property="og:title" content="Aiden Patterson Final Project - Order Drinks page" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="images/fruit-stand.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://aiden-patterson.github.io/wdd230/Final/order.html"
+        />
+        <link rel="icon" href="images/favicon.ico" />
+        <meta
+          name="description"
+          content="Aiden Patterson Final Project fruit drink shop order page"
+        />
+        <title>Aiden Patterson - WDD 230 - Final Project - Order Drinks</title>
+      </head>
+<body>
+    <header>
+        <img src="images/Bountiful-logo-square-regular.webp">
+          <h1>Bountiful Foods</h1>
+          <button id="menu"></button>
+          <nav>
+              <a href="index.html">Home</a>
+              <a href="order.html">Order Now</a>
+              <a href="about.html">About Us</a>
+          </nav>
+      </header>
+
+      <main>
+        <form action="orderConfirm.html" method="post">
+            <fieldset id="personal">
+                <legend>Personal Info</legend>
+                <label>First Name*<input type="text" name="fname" id="fname" required></label>
+                <label>Email*<input type="email" name="email" id="email" required></label>
+                <label>Phone Number*<input type="tel" name="phone" id="phone" required></label>
+            </fieldset>
+            <fieldset id="fruitSelect">
+                <legend>Select your 3 Fruits</legend>
+            </fieldset>
+            <fieldset id="instructions">
+                <legend>Special Instructions</legend>
+                <input type="text" name="instructions" id="specialInstructions">
+            </fieldset>
+            <label>Payment will be required when you come to pick up your drink</label>
+            <input type="submit" name="Order Drink" id="orderDrink">
+        </form>
+      </main>
+      <footer>
+        <a href="https://facebook.com">Facebook</a>
+        <a href="https://instagram.com">Instagram</a>
+        <a href="https://twitter.com">Twitter</a>
+    </footer>
+</body>
+</html>
