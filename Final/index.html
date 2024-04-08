@@ -26,6 +26,7 @@
 
 <body>
     <header>
+      
       <picture>     
         <source 
         srcset="images/Bountiful-logo-header.webp"
@@ -35,22 +36,24 @@
         src="images/Bountiful-icon-header.webp"
         alt="Bountiful Foods logo">
       </picture>
-
+      
         <h1>Bountiful Foods</h1>
-        <nav>
+        <button id="menu"></button>
+        <nav class="navigation">
             <a href="index.html">Home</a>
             <a href="order.html">Order Now</a>
             <a href="about.html">About Us</a>
         </nav>
-        <button id="menu"></button>
+
     </header>
+    
     <main>
-      <div class="card">
+      <div class="card" id="curWeather">
         <h3>Weather</h3>
         <h4>Carlsbad, CA</h4>
+        
         <p id="curTemp"></p>
         <p id="curDesc"></p>
-        <p id="curIcon"></p>
         <p id="curHumid"></p>
       </div>
 
@@ -83,5 +86,7 @@
         <p>654 Beachfront rd. Carlsbad, CA 92008</p>
       </div>
     </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
