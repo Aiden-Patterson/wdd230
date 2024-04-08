@@ -1,4 +1,4 @@
-[
+{"fruits" : [
     {
       "name": "Persimmon",
       "id": 52,
@@ -685,4 +685,5 @@
         "protein": 1.2
       }
     }
-  ]
+]
+}
