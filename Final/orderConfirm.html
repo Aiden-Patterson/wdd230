@@ -1,79 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="styles/normalize.css" />
-        <link rel="stylesheet" href="styles/base.css" />
-        <meta name="author" content="Aiden Patterson" />
-        <meta property="og:title" content="Aiden Patterson Final Project - Thank you page" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="images/fruit-stand.jpg"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <meta name="author" content="Aiden Patterson" />
+    <meta
+      property="og:title"
+      content="Aiden Patterson Final Project - Thank you page"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/fruit-stand.jpg" />
+    <meta
+      property="og:url"
+      content="https://aiden-patterson.github.io/wdd230/Final/orderConfirm.html"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <meta
+      name="description"
+      content="Aiden Patterson Final Project fruit drink shop Thank you page"
+    />
+    <title>Aiden Patterson - WDD 230 - Final Project - Thank You</title>
+  </head>
+  <body>
+    <header>
+      <picture>
+        <source
+          srcset="images/Bountiful-logo-header.webp"
+          media="(max-width: 650px)"
+          type="image/webp"
         />
-        <meta
-          property="og:url"
-          content="https://aiden-patterson.github.io/wdd230/Final/orderConfirm.html"
+        <img
+          src="images/Bountiful-icon-header.webp"
+          alt="Bountiful Foods logo"
         />
-        <link rel="icon" href="images/favicon.ico" />
-        <meta
-          name="description"
-          content="Aiden Patterson Final Project fruit drink shop Thank you page"
-        />
-        <title>Aiden Patterson - WDD 230 - Final Project - Thank You</title>
-      </head>
-<body>
-  <header>
-    <picture>     
-      <source 
-      srcset="images/Bountiful-logo-header.webp"
-      media="(max-width: 650px)"
-      type="image/webp"/>
-      <img
-      src="images/Bountiful-icon-header.webp"
-      alt="Bountiful Foods logo">
-    </picture>
+      </picture>
 
       <h1>Bountiful Foods</h1>
       <nav>
-          <a href="index.html">Home</a>
-          <a href="order.html">Order Now</a>
-          <a href="about.html">About Us</a>
+        <a href="index.html">Home</a>
+        <a href="order.html">Order Now</a>
+        <a href="about.html">About Us</a>
       </nav>
       <button id="menu"></button>
-  </header>
+    </header>
 
-      <main>
-        <h2>Thank you for your order!</h2>
-        <div class="card" id="thankyou">
-
-        </div>
-        <p>You can expect to pick up your order at</p>
+    <main>
+      <h2>Thank you for your order!</h2>
+      <div class="card" id="thankyou">
+        <h3>Order Details</h3>
+        <p id="name">Name:</p>
+        <p id="email">Email:</p>
+        <p id="phone">Phone:</p>
+        <p id="fruit1">Fruit 1:</p>
+        <p id="fruit2">Fruit 2:</p>
+        <p id="fruit3">Fruit 3:</p>
+        <p id="special">Special Instructions:</p>
+        <p id="date"></p>
+      </div>
+      <div class="card">
+        <h3>Nutrition Info</h3>
+        <p id="carbs">Carbs: </p>
+        <p id="protein">Protein: </p>
+        <p id="fat">Fats: </p>
+        <p id="sugar">Sugar: </p>
+        <p id="calories">Calories: </p>
+      </div>
+      <div id="finalize">
+        <p id="pickup">You can expect to pick up your order at </p>
         <p>Questions? Contact us! 123-456-7890</p>
         <button id="review">Leave a Review</button>
-      </main>
-      <footer>
-        <div id="socialMedia">
-          <a href="https://facebook.com">Facebook</a>
-          <a href="https://instagram.com">Instagram</a>
-          <a href="https://twitter.com">Twitter</a>
-        </div>
-        <div id="attribute">
-          <h4>Attributions</h4>
-          <p>fruityvice.com</p>
-          <p>openweathermap.org</p>
-          <p>w3schools.com</p>
-        </div>
-        <div>
-          <p id="lastModified"></p>
-        </div>
-        <div id="contactUs">
-          <p>bountiful.foods@gmail.com</p>
-          <p>123-456-7890</p>
-          <p>654 Beachfront rd. Carlsbad, CA 92008</p>
-        </div>
-      </footer>
-      <script src="scripts/hamburger.js"></script>
-</body>
+      </div>
+    </main>
+    <footer>
+      <div id="socialMedia">
+        <a href="https://facebook.com">Facebook</a>
+        <a href="https://instagram.com">Instagram</a>
+        <a href="https://twitter.com">Twitter</a>
+      </div>
+      <div id="attribute">
+        <h4>Attributions</h4>
+        <p>fruityvice.com</p>
+        <p>openweathermap.org</p>
+        <p>w3schools.com</p>
+      </div>
+      <div>
+        <p id="lastModified"></p>
+      </div>
+      <div id="contactUs">
+        <p>bountiful.foods@gmail.com</p>
+        <p>123-456-7890</p>
+        <p>654 Beachfront rd. Carlsbad, CA 92008</p>
+      </div>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/thankyou.js"></script>
+  </body>
 </html>

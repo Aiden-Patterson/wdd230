@@ -1,7 +1,7 @@
 const option1 = document.getElementById('fruit1');
 const option2 = document.getElementById('fruit2');
 const option3 = document.getElementById('fruit3');
-const url = "https://github.com/Aiden-Patterson/wdd230/tree/main/Final/data/fruits.json";
+const url = "https://github.com/Aiden-Patterson/wdd230/Final/data/fruits.json";
 
 
 async function getFruits(){
@@ -9,12 +9,12 @@ async function getFruits(){
     const response = await fetch(url);
     console.log("world");
     const data = await response.json();
-    //console.log(data.fruits);
+    console.log(data.fruits);
     displayFruits(data.fruits);
 }
-function displayFruits(){
+function displayFruits(fruits){
     console.log(url);
-    url.forEach((fruit) => {
+    fruits.forEach((fruit) => {
         const option = document.createElement('option');
         option.innerHTML = fruit.name;
         option.setAttribute('value', fruit.name);
