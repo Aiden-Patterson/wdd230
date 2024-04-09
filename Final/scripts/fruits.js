@@ -1,7 +1,8 @@
 const option1 = document.getElementById('fruit1');
 const option2 = document.getElementById('fruit2');
 const option3 = document.getElementById('fruit3');
-const url = "https://github.com/Aiden-Patterson/wdd230/Final/data/fruits.json";
+const baseURL = "https://github.io/Aiden-Patterson/wdd230";
+const url = "https://github.io/Aiden-Patterson/wdd230/Final/data/fruits.json";
 
 
 async function getFruits(){
