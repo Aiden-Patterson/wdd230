@@ -6,11 +6,8 @@ const url = "https://aiden-patterson.github.io/wdd230/Final/data/fruits.json";
 
 
 async function getFruits(){
-    console.log("hello");
     const response = await fetch(url);
-    console.log("world");
     const data = await response.json();
-    console.log(data.fruits);
     displayFruits(data.fruits);
 }
 function displayFruits(fruits){
@@ -20,7 +17,17 @@ function displayFruits(fruits){
         option.innerHTML = fruit.name;
         option.setAttribute('value', fruit.name);
         option1.appendChild(option);
+    });
+    fruits.forEach((fruit) => {
+        const option = document.createElement('option');
+        option.innerHTML = fruit.name;
+        option.setAttribute('value', fruit.name);
         option2.appendChild(option);
+    });
+    fruits.forEach((fruit) => {
+        const option = document.createElement('option');
+        option.innerHTML = fruit.name;
+        option.setAttribute('value', fruit.name);
         option3.appendChild(option);
     });
 }
